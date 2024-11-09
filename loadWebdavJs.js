@@ -18,7 +18,7 @@ function checkPropfindResp (propfindXml) {
 
 function clearBody () {
   console.log('Clear existing body if any')
-  document.body.innerHTML = ''
+  document.removeChild(document.childNodes.item(0))
 }
 
 checkWebdavEnabled()
